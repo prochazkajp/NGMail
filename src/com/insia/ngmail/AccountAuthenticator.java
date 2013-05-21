@@ -9,7 +9,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;  
 import android.util.Log;
-import android.widget.Toast;
   
 public class AccountAuthenticator extends AbstractAccountAuthenticator {  
 	private final Context mContext;
@@ -28,7 +27,7 @@ public class AccountAuthenticator extends AbstractAccountAuthenticator {
     	final Bundle result;  
     	  final Intent intent;  
     	                  
-    	  intent = new Intent(this.mContext, MainActivity.class);  
+    	  intent = new Intent(this.mContext, LoginActivity.class);  
     	  intent.putExtra("com.insia.ngmail", authTokenType);  
     	  intent.putExtra(AccountManager.KEY_ACCOUNT_AUTHENTICATOR_RESPONSE, response);  
     	  
